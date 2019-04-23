@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login.js</title>
+	<link rel="stylesheet" href="loginstyle.css">
+<script src="parallax.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul id="scene">
+			<li class="layer" data-depth=".1"><img src="img/par2.png"></li>
+			<li class="layer" data-depth="1"><img src="img/par3.png"></li>
+			<li class="layer" data-depth="-1"><img src="img/par4.png"></li>
+			<li class="layer" data-depth="2"><img src="img/par5.png"></li>
+			<li class="layer" data-depth="0.5"><img src="img/par6.png"></li>
+		</ul>
+	</div>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>

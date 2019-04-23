@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chemistry Zone - Educational Portal</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="parallax.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <div class="parallax1">
+            <div class="slider">
+                <div class="container-fluid header-fl">
+                    <div class="bg-header">
+                        <nav class="navbar navbar">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#b-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#"><img src="img/chem_logo2.png" alt="" height="150"></a>
+
+                            </div>
+
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="index.html">home</a></li>
+                                    <li><a href="about.html">about us</a></li>
+                                    <li><a href="../online-examination-system/index.php">online test</a></li>
+                                    <li><a href="#">Lecture Videos</a></li>
+                                    <li><a href="#">Lecture Notes</a></li>
+                                    <li><a href="syllabus.html">syllabus</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    <li><span><a href="../online-examination-system/index.php"><button class="button"><span>Login/Signup </span></button></a></span></li>
+                                    <li class="circle"><a href="#"><i class="fa fa-search"></i></a></li>
+
+                                </ul>
+                            </div> <!-- navbar - collapse  --> 
+
+                            <ul id="scene">
+                                <li class="layer" data-depth=".1"><img src="img/par2.png"></li>
+                                <li class="layer" data-depth="1"><img src="img/par3.png"></li>
+                                <li class="layer" data-depth="-1"><img src="img/par4.png"></li>
+                                <li class="layer" data-depth="2"><img src="img/par5.png"></li>
+                                <li class="layer" data-depth="0.5"><img src="img/par6.png"></li>
+                            </ul>
+                        </nav>
+                    </div> <!-- big header-->
+
+
+                </div>
+            </div><!-- slider-->
+            <script>
+                var scene = document.getElementById('scene');
+                var parallax = new Parallax(scene);
+            </script>
+        </div>
+
+        <section>
+
+
+            <div id="id01" class="modal">
+
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="img/login.jpg" alt="Avatar" class="avatar" style="height: 20%; width: 100%;">
+                    </div>
+
+                    <div class="container">
+                        <label>
+                            No Account? <a href="signup.html">Create an Account</a>
+                        </label>
+                        <br>
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <br>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <br>
+                        <button type="submit" style="width: 30%;padding: 10px 18px;background-color: #4CAF50;border: 0;" >Login</button>
+                        <br>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
+            <div class="bg-news">
+                <div class="container">
+                    <h2>LATEST NEWS & UPDATES</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="news">
+                                <img src="img/news1.jpg" height="350px" width="350px" alt="">
+                                <h6>3D-printed tissues </h6>
+                                <p class="para">On 11<sup>th</sup> March, 2018 / By Admin</p>
+                                <p>Bioscientists have learned to 3D-print scaffolds that may help heal osteochondral injuries of the sort suffered by many athletes.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="news">
+                                <img src="img/news2.jpg" height="350px" width="350px" alt="" >
+
+                                <h6>#ReserachTalks</h6>
+                                <p class="para">On 10<sup>th</sup> March, 2018 / By Admin</p>
+                                <p>Researchers have designed two types of nano-sized building blocks that can automatically connect into cubes and scramble back into individual components.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="news">
+                                <img src="img/news3.jpg" height="350px" width="350px" alt="" >
+
+                                <h6>TECHKY TALKERS</h6>
+                                <p class="para">On 11<sup>th</sup> March, 2018 / By Admin</p>
+                                <p>In toothpaste, Teflon, LEDs and medications, it shows its sunny side - but elemental fluorine is extremely aggressive and highly toxic.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--------------news----------------->
+
+        </section>
+
+
+
+
+        <div class="parallax2" >
+        </div>
+
+
+
+        <section class="dark">
+            <div class="container">
+                <h1><b>LECTURE VIDEOS</b></h1>  
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 60%; height: 50%; margin-left: 20%">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" >
+
+                        <div class="item active">
+                            <img src="img/vid1.jpg" alt="Los Angeles" style="width:100%; ">
+
+                        </div>
+
+                        <div class="item">
+                            <img src="img/vid2.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/vid3.jpg" alt="New york" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top: 2%; font-size: 15px;">
+                <a href="">Show More</a>
+            </div>
+        </section>
+
+        <div class="parallax3">
+        </div>
+
+        <div class="dark">
+            <div class="container">
+                <h1><b>LECTURE NOTES</b></h1>  
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 40%; height: 40%; margin-left: 30%">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/note1.jpg" alt="Los Angeles" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/note2.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/note3.jpg" alt="New york" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top: 2%; font-size: 20px;">
+                <a href="">Show More</a>
+            </div>
+        </div>
+
+        <div class="parallax4">
+        </div>
+
+        <!---------------paralax4------------------->
+        <div class="container bg-con">
+            <div class="bg-team">
+                <h2>Our Creative Team</h2>
+                <div class="container team-con">
+                    <div class="row-team">
+                        <div class="col-lg-4">
+                            <div class="team">
+                                <img src="img/person1.jpg" class="img-responsive">
+                                <div class="hover">
+                                    <h3 style="color: aliceblue; text-align: center">Dhruv Pande</h3>
+                                    <p style="color: aliceblue; font-size: 15px;">Prof. Graphic Era Hill University (M Tech)</p>
+                                    <ul class="links">
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-google"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="team">
+                                <img src="img/person2.jpg" class="img-responsive">
+                                <div class="hover">
+                                    <h3 style="color: aliceblue; text-align: center">Chandan Tiwari</h3>
+                                    <p style="color: aliceblue; font-size: 15px;">Prof. Graphic Era Hill University (M Tech)</p>
+                                    <ul class="links">
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-google"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="team">
+                                <img src="img/person3.jpg" class="img-responsive">
+                                <div class="hover">
+                                    <h3 style="color: aliceblue; text-align: center">Ajay Singh</h3>
+                                    <p style="color: aliceblue; font-size: 15px;">Prof. Graphic Era Hill University (M Tech)</p>
+                                    <ul class="links">
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-google"></i></a></li>
+                                        <li><a href=""><span class="icons"></span><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div> <!--------------------- team --------------->
+
+
+        <div class="bg-gallery">
+            <h1 style="margin-bottom: 2%;"><b>GALLERY</b></h1>
+            <div class="row">
+                <div class="col-lg-3 gal1">
+                    <div class="gal">
+                        <img src="img/img1.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 gal1">
+                    <div class="gal">
+                        <img src="img/img2.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 gal1">
+                    <div class="gal">
+                        <img src="img/img3.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 gal1">
+                    <div class="gal">
+                        <img src="img/img4.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gallery">
+                <div class="col-lg-3 gal1">
+                    <div class="gal">
+                        <img src="img/img5.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 gal1">
+                    <div class="gal">
+                        <img src="img/img6.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 gal1">
+                    <div class="gal">
+                        <img src="img/img7.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 gal1">
+                    <div class="gal">
+                        <img src="img/img8.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!---------------gallery---------------->
+
+        <div class="bg-client">
+            <div class="container bg-con">
+                <h2>Words from our Alumini</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="client">
+                            <img src="img/client1.jpg" height="80px" width="80px" alt=""  >
+                            <h5>Chris Evans</h5>
+                            <h6>HAPPY CUSTOMER</h6>
+                            <p>Come abroad where expecting you. Love life's sweetest reward Let it flow, it flow back to you.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="client">
+                            <img src="img/client2.jpg" height="80px" width="80px" alt="" >
+                            <h5>Chris Hemsworth</h5>
+                            <h6>HAPPY CUSTOMER</h6>
+                            <p>Come abroad where expecting you. Love life's sweetest reward Let it flow, it flow back to you.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="client">
+                            <img src="img/client3.jpg" height="80px" width="80px" alt="" >
+                            <h5>Christian Bale</h5>
+                            <h6>HAPPY CUSTOMER</h6>
+                            <p>Come abroad where expecting you. Love life's sweetest reward Let it flow, it flow back to you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------client---------------------->
+
+        <div class="bg-fly">
+            <div class="container fly-con">
+                <div class="row fly-row">
+                    <div class="col-lg-6">
+                        <div class="fly">
+                            <h2>Top Performers</h2>
+                            <p>Top performers this week. (The results are compile from your performance on weekly test series.)</p>
+                            <div class="row">
+                                <div class="col-lg-3 flygap">
+                                    <div class="img">
+                                        <img src="img/person1.jpg" alt="" class="img-responsive">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 flygap">
+                                    <div class="img">
+                                        <img src="img/person4.jpg" alt="" class="img-responsive">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 flygap">
+                                    <div class="img">
+                                        <img src="img/person2.jpg" alt="" class="img-responsive">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3 flygap">
+                                    <div class="img">
+                                        <img src="img/person5.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 flygap">
+                                    <div class="img">
+                                        <img src="img/person6.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-lg-3 flygap">
+                                <div class="img">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 flygap flap1">
+                                <div class="img imgs">
+                                    <img src="img/vid2.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 flygap flap1">
+                                <div class="img imgs">
+                                    <img src="img/vid3.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div><!--------------fly------------------>
+                    </div><!---------------col-6----------------->
+                    <div class="col-lg-6 flys">
+                        <div class="fly fly1">
+                            <img src="img/img5.jpg" class="img-responsive" alt="">
+                            <h3>NATIONAL CHEMISTRY WEEK</h3>
+                        </div>
+                    </div>
+                </div><!-----------------row-------------->
+
+
+
+            </div><!------------fly-con---------------->
+        </div><!------------bg-fly---------------->
+
+
+        <!------------------flying------------------------------->
+
+
+
+
+        <h1><b>MAP</b></h1>
+
+        <div id="map" style="width:95%;height:500px; margin-left: 3%; overflow: hidden;"></div> 
+        <script> 
+            function initMap() { 
+                var uluru = {lat: 29.2182644, lng: 79.51297669999997}; 
+                var map = new google.maps.Map(document.getElementById('map'), { 
+                    zoom: 4, 
+                    center: uluru 
+                }); 
+                var marker = new google.maps.Marker({ 
+                    position: uluru, 
+                    map: map 
+                }); 
+            } 
+        </script> 
+        <script async defer src= "https://maps.googleapis.com/maps/api/js?key= AIzaSyCM-28PZ1WD2Yc60AnxPGQjL8kAwPw6QzA&callback=initMap"> 
+        </script> 
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+        <div class="bg-footer" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer">
+                        <ul class="">
+                            <li><h3>Contact us</h3></li>
+
+                            <li><p>Chemistry Zone, Kusumkhera,<br>
+                                Uttarakhand, India</p></li>
+                        </ul>
+
+                        <ul class="list-foot">
+                            <li><h5>email us</h5></li>
+                            <li><p>info2@chemistry.com<br>
+                                support@chemistry.com</p></li>
+                        </ul>
+
+                        <ul class="call us">
+                            <li><p>+(91)123 456 7890<br>
+                                +(91)097 865 4321</p></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer">
+                        <ul clas="">
+                            <li><h3>LATEST NEWS</h3></li>
+                            <li><h5>We've Lovable Space Needd</h5></li>
+                            <li><p>April 04, 2019 / by Admin</p></li>
+                        </ul>
+                        <ul class="list-foot">
+                            <li><h5>Just two Good boy Changes</h5></li>
+                            <li><p>September 10, 2018 / by Admin</p></li>
+                        </ul>
+
+                        <ul class="list-foot">
+                            <li><h5>Just two Good boy Changes</h5></li>
+                            <li><p>September 10, 2018 / by Admin</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer">
+                        <ul class="list-foot1">
+
+                            <li><h3>QUICK LINKS</h3></li>
+                            <li class="links"><a href="">HOME</a></li>
+                            <li class="links"><a href="">ABOUT US</a></li>
+                            <li class="links"><a href="">LECTURE VIDEOS</a></li>
+                            <li class="links"><a href="">LECTURE NOTES</a></li>
+                            <li class="links"><a href="">ONLINE TEST</a></li>
+                            <li class="links"><a href="">OUR TEAM</a></li>
+                            <li class="links"><a href="">CONTACT US</a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--------------bg-footer-------------->
+
+        <div class="bg-footer1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 foot1">
+                        <p>&copy;2019 All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 foot1">
+                        <ul class="pull-right">
+                            <li><a href="">home</a></li>
+                            <li><a href="">about</a></li>
+                            <li><a href="">services</a></li>
+                            <li><a href="">privacy & policy</a></li>
+                            <li><a href="">terms & conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
